@@ -1,0 +1,20 @@
+{
+	"version": "0.1.75.0",
+	"guid": "eb273dd8-c4a9-49d1-a8f4-3916f6b005ca",
+	"name": "Not-Retarded Mine",
+	"description": null,
+	"url": null,
+	"git": null,
+	"authors": [],
+	"dependencies": [
+		{
+			"identifier": "TC2.Core",
+			"required": true
+		},
+		{
+			"identifier": "TC2.Base",
+			"required": true
+		}
+	],
+	"tags": []
+}
