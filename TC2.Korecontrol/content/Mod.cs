@@ -1,5 +1,5 @@
 ﻿
-namespace TC2.Korecontrol
+namespace TC2.minetest
 {
 	public sealed partial class ModInstance: Mod
 	{
