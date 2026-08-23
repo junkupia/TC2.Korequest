@@ -1,0 +1,20 @@
+{
+	"version": "0.1.75.1",
+	"guid": "a7316212-5d75-40b6-929b-99fe67f69c04",
+	"name": "Korecontrol",
+	"description": "Content for the Korequest server",
+	"url": "https://github.com/junkupia/TC2.Korequest",
+	"git": null,
+	"authors": ["Korezack, Junko"],
+	"dependencies": [
+		{
+			"identifier": "TC2.Core",
+			"required": true
+		},
+		{
+			"identifier": "TC2.Base",
+			"required": true
+		}
+	],
+	"tags": []
+}

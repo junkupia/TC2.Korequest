@@ -1,0 +1,25 @@
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35209.166
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{194592BB-965C-4EB7-8771-89C1EFC0E6EF}") = "TC2.Korecontrol", "TC2.Korecontrol.csproj", "{34A8E6F5-E427-40B2-A68D-AD7F5F02DA2A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Client|x64 = Client|x64
+		Server|x64 = Server|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{34A8E6F5-E427-40B2-A68D-AD7F5F02DA2A}.Client|x64.ActiveCfg = Client|x64
+		{34A8E6F5-E427-40B2-A68D-AD7F5F02DA2A}.Client|x64.Build.0 = Client|x64
+		{34A8E6F5-E427-40B2-A68D-AD7F5F02DA2A}.Server|x64.ActiveCfg = Server|x64
+		{34A8E6F5-E427-40B2-A68D-AD7F5F02DA2A}.Server|x64.Build.0 = Server|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {00905403-FF76-4403-8080-B21C7A0E9A85}
+	EndGlobalSection
+EndGlobal
+
