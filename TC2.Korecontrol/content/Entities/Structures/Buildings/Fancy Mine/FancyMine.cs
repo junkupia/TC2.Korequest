@@ -81,17 +81,17 @@ namespace TC2.Base.Components
 				fancymine.t_next_produce = time + fancymine.produce_interval;
 
 #if SERVER
-				var niklajzner = new Resource.Data(fancymine.h_material_niklajzner_cached, random.NextFloatExtra(fancymine.amount, fancymine.amount_extra) * fancymine.amount_multiplier_cached * fancymine.efficiency * fancymine.produce_interval);
+				var niklajzner = new Resource.Data(fancymine.h_material_niklajzner_cached, random.NextFloatExtra(fancymine.amount, fancymine.amount_extra) * fancymine.amount_multiplier_cached);
 				if (inventory.Deposit(ref niklajzner, niklajzner.quantity))
 				{
 
 				}
-				var black_coal = new Resource.Data(fancymine.h_material_black_coal_cached, random.NextFloatExtra(fancymine.amount, fancymine.amount_extra) * fancymine.amount_multiplier_cached * fancymine.efficiency * fancymine.produce_interval);
+				var black_coal = new Resource.Data(fancymine.h_material_black_coal_cached, random.NextFloatExtra(fancymine.amount, fancymine.amount_extra) * fancymine.amount_multiplier_cached);
 				if (inventory.Deposit(ref black_coal, black_coal.quantity))
 				{
 
 				}
-				var copper = new Resource.Data(fancymine.h_material_copper_cached, random.NextFloatExtra(fancymine.amount, fancymine.amount_extra) * fancymine.amount_multiplier_cached * fancymine.efficiency * fancymine.efficiency);
+				var copper = new Resource.Data(fancymine.h_material_copper_cached, random.NextFloatExtra(fancymine.amount, fancymine.amount_extra) * fancymine.amount_multiplier_cached * fancymine.efficiency);
 				if (inventory.Deposit(ref copper, copper.quantity))
 				{
 
@@ -101,12 +101,12 @@ namespace TC2.Base.Components
 				{
 
 				}
-				var gold = new Resource.Data(fancymine.h_material_gold_cached, random.NextFloatExtra(fancymine.amount, fancymine.amount_extra) * fancymine.amount_multiplier_cached * fancymine.efficiency);
+				var gold = new Resource.Data(fancymine.h_material_gold_cached, random.NextFloatExtra(fancymine.amount, fancymine.amount_extra) * fancymine.amount_multiplier_cached * fancymine.efficiency * fancymine.efficiency * fancymine.efficiency);
 				if (inventory.Deposit(ref gold, gold.quantity))
 				{
 
 				}
-				var saltpeter = new Resource.Data(fancymine.h_material_saltpeter_cached, random.NextFloatExtra(fancymine.amount, fancymine.amount_extra) * fancymine.amount_multiplier_cached * fancymine.efficiency * fancymine.efficiency);
+				var saltpeter = new Resource.Data(fancymine.h_material_saltpeter_cached, random.NextFloatExtra(fancymine.amount, fancymine.amount_extra) * fancymine.amount_multiplier_cached * fancymine.efficiency);
 				if (inventory.Deposit(ref saltpeter, saltpeter.quantity))
 				{
 
