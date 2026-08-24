@@ -1,10 +1,6 @@
 ﻿{
-	$version: "0.1.75.1"
-	name: "Market"
-	desc:
-		'''
-		A directly-controlled source of imports and exports - we still haven't figured out how to tariff this stuff yet, though.
-		'''
+	$version: "0.1.70.1"
+	name: "Chemical Workshop"
 	tips: []
 	
 	stages:
@@ -17,6 +13,9 @@
 			tags: none
 			// Damage type used for discarding leftover resources.
 			discard_damage_type: shovel
+			
+			ratio: 0.000
+			mass_base: 0.000
 			
 			options:
 			[
@@ -31,24 +30,24 @@
 						{
 							type: resource
 							material: gravel
-							amount: 760.000
-							loss: 0.039
+							amount: 1060.000
+							loss: 0.024
 							group: 0
 							flags: compact, primary
 						}
 						{
 							type: work
 							work: filling.gravel
-							amount: 1025.000
-							amount_min: 20.000
-							difficulty: 6
+							amount: 1175.000
+							difficulty: 9
+							snapping: 25.000
 							group: 0
 							flags: conditional
 						}
 					]
 				}
 				{
-					name: "Paved"
+					name: "Compacted Soil"
 					
 					type: undefined
 					flags: none
@@ -58,36 +57,28 @@
 						{
 							type: resource
 							material: soil
-							amount: 735.000
-							loss: 0.071
+							amount: 920.000
+							loss: 0.067
 							group: 0
-							flags: compact
-						}
-						{
-							type: resource
-							material: brick.concrete
-							amount: 60.000
-							loss: 0.071
-							group: 0
-							flags: compact
+							flags: compact, primary
 						}
 						{
 							type: work
 							work: filling.soil
-							amount: 550.000
-							amount_min: 40.000
-							difficulty: 4
+							amount: 825.000
+							difficulty: 5
+							snapping: 25.000
 							group: 0
-							flags: simultaneous, conditional
+							flags: conditional
 						}
 						{
 							type: work
-							work: masonry
-							amount: 280.000
-							amount_min: 20.000
-							difficulty: 7
-							group: 0
-							flags: simultaneous, conditional
+							work: compaction.soil
+							amount: 390.000
+							difficulty: 3
+							snapping: 25.000
+							group: 1
+							flags: conditional
 						}
 					]
 				}
@@ -102,80 +93,101 @@
 						{
 							type: resource
 							material: scrap.rubble
-							amount: 540.000
+							amount: 660.000
 							loss: 0.020
 							group: 0
-							flags: compact
-						}
-						{
-							type: resource
-							material: soil
-							amount: 180.000
-							loss: 0.059
-							group: 0
-							flags: compact
+							flags: compact, primary
 						}
 						{
 							type: work
 							work: filling.rubble
-							amount: 550.000
-							amount_min: 20.000
-							difficulty: 10
+							amount: 800.000
+							difficulty: 12
+							snapping: 25.000
 							group: 0
-							flags: simultaneous, conditional
+							flags: conditional
+						}
+						{
+							type: resource
+							material: soil
+							amount: 200.000
+							loss: 0.059
+							group: 1
+							flags: compact, primary
 						}
 						{
 							type: work
 							work: filling.soil
-							amount: 180.000
-							amount_min: 20.000
-							difficulty: 8
-							group: 0
-							flags: simultaneous, conditional
+							amount: 160.000
+							difficulty: 4
+							snapping: 25.000
+							group: 1
+							flags: conditional
 						}
 					]
 				}
 				{
-					name: "Concrete Mix"
+					name: "Concrete Composite"
 					
 					type: undefined
-					flags: none
+					flags: disabled
 					
 					requirements:
 					[
 						{
 							type: resource
 							material: scrap.concrete
-							amount: 670.000
-							loss: 0.020
+							amount: 175.000
+							snapping: 1.000
 							group: 0
-							flags: compact
-						}
-						{
-							type: resource
-							material: gravel
-							amount: 215.000
-							loss: 0.059
-							group: 0
-							flags: compact
 						}
 						{
 							type: work
 							work: filling.rubble
-							amount: 400.000
-							amount_min: 30.000
-							difficulty: 11
+							amount: 200.000
+							difficulty: 7
+							snapping: 5.000
 							group: 0
-							flags: simultaneous, conditional
+							flags: conditional
+						}
+						{
+							type: resource
+							material: cement
+							amount: 35.000
+							snapping: 1.000
+							group: 1
+						}
+						{
+							type: resource
+							material: sand
+							amount: 50.000
+							snapping: 1.000
+							group: 1
 						}
 						{
 							type: work
-							work: shattering
-							amount: 450.000
-							amount_min: 25.000
-							difficulty: 9
-							group: 0
-							flags: simultaneous, conditional
+							work: filling.sand
+							amount: 175.000
+							difficulty: 3
+							snapping: 5.000
+							group: 1
+							flags: conditional
+						}
+						{
+							type: resource
+							material: water
+							amount: 25.000
+							snapping: 1.000
+							group: 2
+						}
+						{
+							type: work
+							work: filling.liquid
+							amount: 150.000
+							difficulty: 3
+							snapping: 5.000
+							group: 2
+							flags: conditional
 						}
 					]
 				}
@@ -190,6 +202,9 @@
 			// Damage type used for discarding leftover resources.
 			discard_damage_type: axe
 			
+			ratio: 0.000
+			mass_base: 0.000
+			
 			options:
 			[
 				{
@@ -202,15 +217,15 @@
 					[
 						{
 							type: resource
-							material: cloth
-							amount: 36.000
+							material: steel.frames
+							amount: 8.000
 							snapping: 0.500
 							loss: 0.075
 							group: 0
 						}
 						{
 							type: resource
-							material: steel.frames
+							material: steel.plate
 							amount: 25.000
 							snapping: 0.500
 							loss: 0.122
@@ -219,7 +234,7 @@
 						{
 							type: resource
 							material: wood
-							amount: 90.000
+							amount: 20.000
 							snapping: 5.000
 							loss: 0.075
 							group: 0
@@ -238,18 +253,21 @@
 			]
 		}
 		{
-			name: "Roof"
+			name: "Hardware"
 			
-			type: infrastructure
+			type: appliances
 			flags: wip
 			tags: none
 			// Damage type used for discarding leftover resources.
-			discard_damage_type: axe
+			discard_damage_type: sledgehammer
+			
+			ratio: 0.000
+			mass_base: 0.000
 			
 			options:
 			[
 				{
-					name: "Installation"
+					name: "Standard"
 					
 					type: undefined
 					flags: wip
@@ -258,61 +276,52 @@
 					[
 						{
 							type: resource
-							material: wood
-							amount: 50.000
-							snapping: 5.000
-							loss: 0.075
+							material: steel.frames
+							amount: 35.000
+							snapping: 0.500
+							loss: 0.224
 							group: 0
 						}
 						{
 							type: resource
-							material: steel.plate
-							amount: 45.000
-							snapping: 5.000
-							loss: 0.075
+							material: machine_parts
+							amount: 80.000
+							snapping: 1.000
+							loss: 0.157
+							group: 0
+						}
+						{
+							type: resource
+							material: glass
+							amount: 40.000
+							snapping: 1.000
+							loss: 0.157
+							group: 0
+						}
+						{
+							type: resource
+							material: copper.plate
+							amount: 55.000
+							snapping: 1.000
+							loss: 0.157
+							group: 0
+						}
+						{
+							type: resource
+							material: copper.ingot
+							amount: 20.000
+							snapping: 1.000
+							loss: 0.157
 							group: 0
 						}
 						{
 							type: work
-							work: carpentry
-							amount: 800.000
-							difficulty: 6
+							work: construction
+							amount: 1500.000
+							difficulty: 7
 							snapping: 5.000
 							group: 0
 							flags: conditional
-						}
-					]
-				}
-			]
-		}
-		{
-			name: "Trader Relocation"
-			
-			type: infrastructure
-			flags: wip
-			tags: none
-			// Damage type used for discarding leftover resources.
-			discard_damage_type: axe
-			
-			options:
-			[
-				{
-					name: "Bribery"
-					
-					type: undefined
-					flags: wip
-					
-					requirements:
-					[
-						{
-							type: resource
-							material: money
-							amount: 200.000
-							snapping: 15.000
-							falloff: 0.771
-							loss: 0.075
-							group: 0
-							flags: stepped, conditional
 						}
 					]
 				}
@@ -324,7 +333,7 @@
 	[
 		{
 			type: prefab
-			prefab: yeoldemarket
+			prefab: chemical.workshop
 			amount: 1.000
 			group: 0
 			flags: primary, hidden
@@ -333,25 +342,25 @@
 	
 	type: buildings
 	flags: no_amount_multiplier, blueprintable, construction, building, ignore_tools, ignore_equipment, ignore_machinery, ignore_environment, wip, no_cancel, auto_complete
-	tags: complex, large, woodworking, architecture, construction
+	tags: advanced, huge, architecture, construction
 	hints: none
 	connotations: none
 	infrastructure: none
 	infrastructure_exclude: none
 	
-	dismantle_work: 50.000
+	dismantle_work: 8.000
 	dismantle_yield: 0.800
 	
 	icon:
 	{
-		texture: yeoldemarket
-		size: [50, 89]
+		texture: lab.chemical.00
+		size: [56, 56]
 	}
 	
-	color_frame: "0xffc54e5e"
+	color_frame: "0xff80dc7e"
 	color_button: "0xff9dd80f"
 	button_name: "Build"
-	rank: -900.000
+	rank: 0.000
 	
 	min: 1
 	max: 1
@@ -360,10 +369,10 @@
 	placement:
 	{
 		type: simple
-		flags: allow_mirror_x, require_claimed, require_terrain, terrain_is_support
+		flags: allow_mirror_x, require_terrain, terrain_is_support
 		
-		size: [7.000, 10.000]
-		offset: [0.000, -2.275]
+		size: [7.000, 7.000]
+		offset: [0.000, -2.500]
 		
 		rect_foundation: [-3.500, 0.000, 3.500, 1.000]
 		tileflags_foundation: solid
@@ -403,18 +412,16 @@
 			{
 				type: resource
 				material: wood
-				amount: 25.000
-				loss: 0.110
+				amount: 24.000
 				group: 0
-				flags: compact, no_scaling, prerequisite
+				flags: prerequisite
 			}
 			{
 				type: resource
 				material: brick.concrete
 				amount: 60.000
-				loss: 0.031
 				group: 0
-				flags: compact, no_scaling, prerequisite
+				flags: prerequisite
 			}
 		]
 	}
