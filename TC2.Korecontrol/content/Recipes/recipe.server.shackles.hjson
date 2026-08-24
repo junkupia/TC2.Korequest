@@ -209,6 +209,17 @@
 							group: 0
 							flags: conditional
 						}
+						{
+							type: work
+							work: torture
+							amount: 100.000
+							amount_min: 40.000
+							difficulty: 5
+							snapping: 0.500
+							ratio: 0.145
+							group: 0
+							flags: conditional
+						}
 					]
 
 					products:
@@ -248,6 +259,17 @@
 							group: 0
 							flags: prerequisite
 						}
+						{
+							type: work
+							work: torture
+							amount: 100.000
+							amount_min: 40.000
+							difficulty: 5
+							snapping: 0.500
+							ratio: 0.145
+							group: 0
+							flags: conditional
+						}
 					]
 
 					products:
@@ -285,6 +307,17 @@
 							loss: 0.067
 							group: 0
 							flags: prerequisite
+						}
+						{
+							type: work
+							work: torture
+							amount: 100.000
+							amount_min: 40.000
+							difficulty: 5
+							snapping: 0.500
+							ratio: 0.145
+							group: 0
+							flags: conditional
 						}
 					]
 
