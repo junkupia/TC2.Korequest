@@ -91,22 +91,22 @@ namespace TC2.Base.Components
 				{
 
 				}
-				var copper = new Resource.Data(fancymine.h_material_copper_cached, random.NextFloatExtra(fancymine.amount, fancymine.amount_extra) * fancymine.amount_multiplier_cached * fancymine.efficiency);
+				var copper = new Resource.Data(fancymine.h_material_copper_cached, random.NextFloatExtra(fancymine.amount, fancymine.amount_extra) * fancymine.amount_multiplier_cached * fancymine.efficiency * fancymine.efficiency);
 				if (inventory.Deposit(ref copper, copper.quantity))
 				{
 
 				}
-				var himlkarzenus = new Resource.Data(fancymine.h_material_himlkarzenus_cached, random.NextFloatExtra(fancymine.amount, fancymine.amount_extra) * fancymine.amount_multiplier_cached * fancymine.efficiency * fancymine.produce_interval);
+				var himlkarzenus = new Resource.Data(fancymine.h_material_himlkarzenus_cached, random.NextFloatExtra(fancymine.amount, fancymine.amount_extra) * fancymine.amount_multiplier_cached * fancymine.efficiency);
 				if (inventory.Deposit(ref himlkarzenus, himlkarzenus.quantity))
 				{
 
 				}
-				var gold = new Resource.Data(fancymine.h_material_gold_cached, random.NextFloatExtra(fancymine.amount, fancymine.amount_extra) * fancymine.amount_multiplier_cached * fancymine.efficiency * fancymine.produce_interval);
+				var gold = new Resource.Data(fancymine.h_material_gold_cached, random.NextFloatExtra(fancymine.amount, fancymine.amount_extra) * fancymine.amount_multiplier_cached * fancymine.efficiency);
 				if (inventory.Deposit(ref gold, gold.quantity))
 				{
 
 				}
-				var saltpeter = new Resource.Data(fancymine.h_material_saltpeter_cached, random.NextFloatExtra(fancymine.amount, fancymine.amount_extra) * fancymine.amount_multiplier_cached * fancymine.efficiency * fancymine.produce_interval);
+				var saltpeter = new Resource.Data(fancymine.h_material_saltpeter_cached, random.NextFloatExtra(fancymine.amount, fancymine.amount_extra) * fancymine.amount_multiplier_cached * fancymine.efficiency * fancymine.efficiency);
 				if (inventory.Deposit(ref saltpeter, saltpeter.quantity))
 				{
 

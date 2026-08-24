@@ -79,13 +79,6 @@ faction:
 claimable:
 {
 	flags: allow_owner_unclaim, allow_enemy_unclaim
-	requirements:
-	[
-		{
-	 		type: money
-	 		amount: 1449.990
-	 	}
-	]
 }
 
 spawn:
@@ -107,7 +100,7 @@ minimap.marker:
 
 fancymine:
 {
-	produce_interval: 12.000
+	produce_interval: 20.000
 	amount: 2.387
 	amount_extra: 1.282
 
