@@ -1,5 +1,5 @@
 ﻿{
-	$version: "0.1.70.1"
+	$version: "0.1.75.1"
 	name: "Radio"
 	desc:
 		'''
@@ -86,7 +86,7 @@
 		size: [3.000, 2.000]
 		offset: [0.000, -0.500]
 		
-		rect_clearance: [-1.750, -1.000, 1.750, 0.000]
+		rect_clearance: [-1.050, -1.800, 1.050, 0.400]
 		tileflags_clearance: solid
 		
 		cooldown: 1.000
