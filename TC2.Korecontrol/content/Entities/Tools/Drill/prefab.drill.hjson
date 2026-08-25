@@ -19,7 +19,7 @@ body:
 		
 		layer: entity, solid, item, shield, conductive, magnetic
 		mask: world
-		exclude: none
+		exclude: resource
 		
 		mass: 25.000
 		radius: 0.500
