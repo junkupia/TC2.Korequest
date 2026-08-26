@@ -285,7 +285,7 @@
 	[
 		{
 			type: prefab
-			prefab: "null"
+			prefab: animalshelter.00
 			amount: 1.000
 			group: 0
 			flags: primary, hidden
@@ -340,12 +340,12 @@
 		flags: allow_mirror_x, require_claimed, require_terrain, terrain_is_support
 		
 		size: [7.000, 10.000]
-		offset: [0.000, -2.275]
+		offset: [0.000, -4.025]
 		
-		rect_foundation: [-3.500, 0.000, 3.500, 1.000]
+		rect_foundation: [-5.200, 0.000, 4.800, 0.999999]
 		tileflags_foundation: solid
 		
-		rect_clearance: [-3.125, -5.500, 3.125, 0.000]
+		rect_clearance: [-5.125, -8.700, 4.825001, 0.000]
 		tileflags_clearance: solid
 		
 		cooldown: 1.000
