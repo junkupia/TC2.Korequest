@@ -261,9 +261,9 @@ lamp:
 
 essence_rig:
 {
-	produce_interval: 12.000
-	amount: 1.387
-	amount_extra: 1.282
+	produce_interval: 30.000
+	amount: 0.129
+	amount_extra: 0.231
 
 	@inventory1:
 	{

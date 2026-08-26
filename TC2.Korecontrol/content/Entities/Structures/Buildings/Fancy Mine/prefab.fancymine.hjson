@@ -25,7 +25,8 @@ body:
 		
 		material: building_masonry
 		
-		layer: entity, building, ignore_melee
+		layer: entity, building, support, ignore_melee, ignore_bullet, storage
+		mask: world, building
 	}
 }
 
@@ -52,6 +53,7 @@ transform:
 interactable:
 {
 	flags: no_tab
+	priority: 1.000
 	window_size: [120.000, 96.000]
 	window_size_misc: [288.000, 144.000]
 }
@@ -78,7 +80,7 @@ faction:
 
 claimable:
 {
-	flags: allow_owner_unclaim, allow_enemy_unclaim
+	flags: no_menu, enable_wololo
 }
 
 spawn:
@@ -101,13 +103,13 @@ minimap.marker:
 fancymine:
 {
 	produce_interval: 20.000
-	amount: 2.387
-	amount_extra: 1.282
+	amount: 0.983
+	amount_extra: 0.324
 
 	@inventory8:
 	{
-		type: output
-		flags: standalone, allow_ducts, ignore_mass, no_auto_pickup, no_drop
+		type: storage
+		flags: standalone, no_auto_pickup, public, faction
 		stack_size_multiplier: 1.000
 		offset: [-1.750, 0.625]
 	}
