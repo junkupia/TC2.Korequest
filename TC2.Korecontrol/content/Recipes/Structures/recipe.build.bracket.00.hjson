@@ -1,9 +1,11 @@
 ﻿{
 	$version: "0.1.75.1"
-	name: "Clock"
+	name: "Bracket"
 	desc:
 		'''
-		A clock to tell the time.
+		Supportive bracket for your construction. 
+
+		Can be used as a platform.
 		'''
 	tips: []
 	
@@ -11,29 +13,15 @@
 	[
 		{
 			type: resource
-			material: machine_parts
-			amount: 25.000
-			group: 0
-			flags: prerequisite
-		}
-		{
-			type: resource
 			material: steel.frames
-			amount: 14.000
+			amount: 45.000
 			group: 0
 			flags: prerequisite
 		}
 		{
 			type: resource
 			material: steel.plate
-			amount: 8.000
-			group: 0
-			flags: prerequisite
-		}
-		{
-			type: resource
-			material: cloth
-			amount: 15.000
+			amount: 12.000
 			group: 0
 			flags: prerequisite
 		}
@@ -43,13 +31,13 @@
 	[
 		{
 			type: prefab
-			prefab: clock.00
+			prefab: bracket.00
 			amount: 1.000
 			group: 0
 		}
 	]
 	
-	type: machinery
+	type: architecture
 	flags: blueprintable, wip
 	tags: construction
 	hints: none
@@ -60,11 +48,7 @@
 	dismantle_work: 15.000
 	dismantle_yield: 0.800
 	
-	icon:
-	{
-		texture: clock.00
-		size: [19, 19]
-	}
+	icon_offset: [6.000, 0.000]
 	
 	color_frame: "0xffaeb59a"
 	color_button: "0xff9dd80f"
@@ -76,14 +60,15 @@
 		flags: allow_mirror_x, no_snapping, no_solid_support
 		
 		size: [1.800, 1.800]
+		offset: [1.875, 0.000]
 		
-		rect_clearance: [1.000, 1.000, -1.000, -1.000]
+		rect_clearance: [0.100, -0.400, 3.900, 0.900]
 		
 		cooldown: 0.500
 		min_support: 0.900
 		min_clearance: 0.900
 		
-		rotation_max: 0.200
+		rotation_max: 10.000
 		
 		sound: building_place
 		
