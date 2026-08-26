@@ -145,7 +145,7 @@ faction:
 
 claimable:
 {
-	flags: allow_owner_unclaim, allow_enemy_unclaim
+	flags: allow_owner_unclaim, allow_enemy_unclaim, enable_wololo
 }
 
 minimap.marker:
