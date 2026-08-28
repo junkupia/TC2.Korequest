@@ -55,7 +55,7 @@
 						{
 							type: resource
 							material: money
-							amount: 3.500
+							amount: 9.500
 							group: 0
 							flags: primary
 						}
@@ -159,10 +159,6 @@
 	infrastructure: table, chair, surface
 	infrastructure_exclude: none
 	
-	icon:
-	{
-		size: [16, 16]
-	}
 	icon_offset: [0.000, -7.000]
 	
 	icon_extra:
