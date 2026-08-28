@@ -36,7 +36,7 @@
 						{
 							type: resource
 							material: money
-							amount: 165.000
+							amount: 24.000
 							group: 0
 							flags: prerequisite
 						}
@@ -65,7 +65,7 @@
 						{
 							type: resource
 							material: cmajzl
-							amount: 155.000
+							amount: 12.000
 							group: 0
 							flags: prerequisite
 						}
@@ -107,14 +107,14 @@
 						{
 							type: resource
 							material: water
-							amount: 50.000
+							amount: 15.000
 							group: 0
 							flags: prerequisite
 						}
 						{
 							type: resource
 							material: compost
-							amount: 12.000
+							amount: 3.000
 							group: 0
 							flags: prerequisite
 						}
@@ -221,7 +221,7 @@
 	rank: 104.000
 	
 	min: 1
-	max: 50
+	max: 4
 	step: 1
 	
 	h_sound_begin: gravel_hit_sharp_02
