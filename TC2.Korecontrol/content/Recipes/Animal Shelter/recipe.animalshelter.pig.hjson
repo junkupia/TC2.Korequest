@@ -1,11 +1,21 @@
 ﻿{
 	$version: "0.1.75.1"
-	name: "Capybara Growth"
+	name: "Grow Pigs"
 	desc:
 		'''
-		A very peaceful creature, who would be very happy to call you their friend.
+		Pigs are a great source of meat for your chow factories - or just a friendly pet to keep around.
 		'''
 	tips: []
+	
+	related_materials:
+	{
+		money: product
+		arcanite: ingredient
+		arcanite.ingot: ingredient
+		arcanite.plate: ingredient
+		arcanite.rod: ingredient
+		arcanite.powder: ingredient
+	}
 	
 	stages:
 	[
@@ -31,14 +41,14 @@
 						{
 							type: resource
 							material: money
-							amount: 265.000
+							amount: 75.000
 							group: 0
 							flags: prerequisite
 						}
 						{
 							type: work
 							work: trading
-							amount: 80.000
+							amount: 240.000
 							difficulty: 8
 							group: 0
 							flags: no_scaling, conditional
@@ -50,7 +60,7 @@
 					complete_delay: 0.000
 				}
 				{
-					name: "Puttin Together a Family"
+					name: "Making a Family"
 					
 					type: undefined
 					flags: none
@@ -59,14 +69,14 @@
 					[
 						{
 							type: prefab
-							prefab: capybara
+							prefab: bredpig
 							amount: 2.000
 							group: 0
 							flags: prerequisite
 						}
 						{
 							type: work
-							work: blending
+							work: filtering
 							amount: 200.000
 							difficulty: 12
 							group: 0
@@ -102,7 +112,7 @@
 						{
 							type: resource
 							material: cmajzl
-							amount: 152.000
+							amount: 122.000
 							group: 0
 							flags: prerequisite
 						}
@@ -161,7 +171,7 @@
 						{
 							type: resource
 							material: plants
-							amount: 870.000
+							amount: 770.000
 							group: 0
 							flags: prerequisite
 						}
@@ -200,13 +210,38 @@
 						{
 							type: work
 							work: drying
-							amount: 52.000
-							amount_min: 40.000
+							amount: 120.000
+							amount_min: 90.000
 							difficulty: 4
 							snapping: 5.000
 							falloff: 0.521
 							group: 0
 							flags: conditional
+						}
+					]
+				}
+				{
+					name: "Forcefeed"
+					
+					type: undefined
+					flags: none
+					
+					requirements:
+					[
+						{
+							type: resource
+							material: chow
+							amount: 90.000
+							group: 0
+							flags: prerequisite
+						}
+						{
+							type: work
+							work: torture
+							amount: 150.000
+							difficulty: 8
+							group: 0
+							flags: no_scaling, conditional
 						}
 					]
 				}
@@ -218,7 +253,7 @@
 	[
 		{
 			type: prefab
-			prefab: capybara
+			prefab: bredpig
 			amount: 1.000
 			group: 0
 			flags: primary, compact
@@ -235,26 +270,26 @@
 	
 	icon:
 	{
-		texture: capybara.body.a
-		size: [20, 20]
+		texture: pig.body
+		size: [16, 16]
 	}
-	icon_offset: [-16.000, 0.000]
+	icon_offset: [-9.000, -5.000]
 	
 	icon_extra:
 	{
-		texture: capybara.head
+		texture: pig.head
 		size: [16, 16]
 		frame: [2, 0]
 	}
-	icon_extra_offset: [-11.000, -11.000]
+	icon_extra_offset: [-6.000, -21.000]
 	
 	icon_c:
 	{
-		texture: resource.water.clean
+		texture: resource.cmajzl
 		size: [16, 16]
 		frame: [2, 0]
 	}
-	icon_c_offset: [0.000, -3.000]
+	icon_c_offset: [-3.000, -4.000]
 	
 	color_frame: "0xff9dd80f"
 	color_button: "0xff9dd80f"
@@ -262,11 +297,8 @@
 	rank: 104.000
 	
 	min: 1
-	max: 4
+	max: 3
 	step: 1
-	
-	h_sound_begin: zabar.growl.00
-	h_sound_complete: zabar.tongue.attach.00
 	
 	version: 1
 }
