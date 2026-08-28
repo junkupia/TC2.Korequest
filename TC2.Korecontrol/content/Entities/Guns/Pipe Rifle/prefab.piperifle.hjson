@@ -44,10 +44,10 @@ gun:
 	velocity_multiplier: 320.000
 	velocity_max: 520.000
 	jitter_multiplier: 0.290
-	recoil_multiplier: 0.650
+	recoil_multiplier: 1.850
 	muzzle_blast_mult: 1.100
 	reload_interval: 0.900
-	cycle_interval: 0.800
+	cycle_interval: 1.600
 	stability: 1400.000
 	failure_rate: 0.001
 	
