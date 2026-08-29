@@ -100,7 +100,7 @@
 			options:
 			[
 				{
-					name: "Stuffing"
+					name: "Wrapping"
 					
 					type: undefined
 					flags: auto_generated
@@ -117,32 +117,11 @@
 							flags: prerequisite
 						}
 						{
-							type: resource
-							material: steel.frames
-							amount: 0.300
-							snapping: 0.100
-							loss: 0.075
-							group: 0
-							flags: prerequisite
-						}
-						{
 							type: work
 							work: wrapping.cloth
 							amount: 214.4108
 							amount_min: 87.500
 							difficulty: 11
-							snapping: 5.000
-							falloff: 0.880
-							ratio: 0.878
-							group: 0
-							flags: simultaneous, conditional
-						}
-						{
-							type: work
-							work: bolting
-							amount: 210.000
-							amount_min: 140.000
-							difficulty: 16
 							snapping: 5.000
 							falloff: 0.880
 							ratio: 0.878
