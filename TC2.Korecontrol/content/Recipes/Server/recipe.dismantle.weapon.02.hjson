@@ -1,0 +1,1037 @@
+{
+	$version: "0.1.72.1"
+	name: "Dismantle Light Weapon"
+	desc:
+		'''
+		Recover some of the components of a weapon
+		'''
+	tips: []
+	
+	related_materials:
+	{
+		pellet.heat: product, result, output
+		directors: residue, product, result, byproduct, output
+		lime: residue, raw, powdered, result, output
+		limelight: input, auto_generated
+	}
+	
+	stages:
+	[
+		{
+			name: "Disassembly"
+			
+			type: disassembly
+			flags: subtractive, wip, auto_generated
+			tags: none
+			// Damage type used for discarding leftover resources.
+			discard_damage_type: sledgehammer
+			
+			ratio: 1.000
+			
+			options:
+			[
+			{
+					name: "Auto Shotgun"
+					
+					type: undefined
+					flags: auto_generated
+					
+					requirements:
+					[
+						{
+							type: prefab
+							prefab: auto_shotgun
+							amount: 1.000
+							group: 0
+							flags: prerequisite
+						}
+					]
+					
+					products:
+					[
+						{
+							type: resource
+							material: steel.plate
+							amount: 0.600
+							group: 0
+							flags: residue
+						}
+						{
+							type: resource
+							material: steel.frames
+							amount: 0.900
+							group: 0
+							flags: residue
+						}
+						{
+							type: resource
+							material: machine_parts
+							amount: 2.000
+							group: 0
+							flags: residue
+						}
+						{
+							type: resource
+							material: wood
+							amount: 0.100
+							group: 0
+							flags: residue
+						}
+						{
+							type: resource
+							material: scrap.mixed
+							amount: 5.500
+							group: 0
+							flags: residue
+						}
+					]
+					
+					filter_tools:
+					{
+						require: hammer
+						include: hammer, wrench, cleaver, bucket, axe, shovel, spatula, crowbar, knife, scissors
+					}
+					filter_environment:
+					{
+						include: dirty, smelly, ugly, scary, noisy, reinforced, durable, sturdy
+					}
+				}
+				{
+					name: "Battle Rifle"
+					
+					type: undefined
+					flags: auto_generated
+					
+					requirements:
+					[
+						{
+							type: prefab
+							prefab: battle_rifle
+							amount: 1.000
+							group: 0
+							flags: prerequisite
+						}
+					]
+					
+					products:
+					[
+						{
+							type: resource
+							material: steel.plate
+							amount: 0.700
+							group: 0
+							flags: residue
+						}
+						{
+							type: resource
+							material: steel.frames
+							amount: 0.650
+							group: 0
+							flags: residue
+						}
+						{
+							type: resource
+							material: machine_parts
+							amount: 2.000
+							group: 0
+							flags: residue
+						}
+						{
+							type: resource
+							material: wood
+							amount: 0.150
+							group: 0
+							flags: residue
+						}
+						{
+							type: resource
+							material: scrap.mixed
+							amount: 5.500
+							group: 0
+							flags: residue
+						}
+					]
+					
+					filter_tools:
+					{
+						require: hammer
+						include: hammer, wrench, cleaver, bucket, axe, shovel, spatula, crowbar, knife, scissors
+					}
+					filter_environment:
+					{
+						include: dirty, smelly, ugly, scary, noisy, reinforced, durable, sturdy
+					}
+				}
+				{
+					name: "Carbine"
+					
+					type: undefined
+					flags: auto_generated
+					
+					requirements:
+					[
+						{
+							type: prefab
+							prefab: carbine
+							amount: 1.000
+							group: 0
+							flags: prerequisite
+						}
+					]
+					
+					products:
+					[
+						{
+							type: resource
+							material: steel.plate
+							amount: 0.800
+							group: 0
+							flags: residue
+						}
+						{
+							type: resource
+							material: steel.frames
+							amount: 0.150
+							group: 0
+							flags: residue
+						}
+						{
+							type: resource
+							material: machine_parts
+							amount: 0.750
+							group: 0
+							flags: residue
+						}
+						{
+							type: resource
+							material: wood
+							amount: 0.100
+							group: 0
+							flags: residue
+						}
+						{
+							type: resource
+							material: scrap.mixed
+							amount: 5.500
+							group: 0
+							flags: residue
+						}
+					]
+					
+					filter_tools:
+					{
+						require: hammer
+						include: hammer, wrench, cleaver, bucket, axe, shovel, spatula, crowbar, knife, scissors
+					}
+					filter_environment:
+					{
+						include: dirty, smelly, ugly, scary, noisy, reinforced, durable, sturdy
+					}
+				}
+				{
+					name: "Light Machine Gun"
+					
+					type: undefined
+					flags: auto_generated
+					
+					requirements:
+					[
+						{
+							type: prefab
+							prefab: lmg
+							amount: 1.000
+							group: 0
+							flags: prerequisite
+						}
+					]
+					
+					products:
+					[
+						{
+							type: resource
+							material: steel.plate
+							amount: 1.300
+							group: 0
+							flags: residue
+						}
+						{
+							type: resource
+							material: steel.frames
+							amount: 0.900
+							group: 0
+							flags: residue
+						}
+						{
+							type: resource
+							material: machine_parts
+							amount: 3.200
+							group: 0
+							flags: residue
+						}
+						{
+							type: resource
+							material: wood
+							amount: 0.100
+							group: 0
+							flags: residue
+						}
+						{
+							type: resource
+							material: scrap.mixed
+							amount: 5.500
+							group: 0
+							flags: residue
+						}
+					]
+					
+					filter_tools:
+					{
+						require: hammer
+						include: hammer, wrench, cleaver, bucket, axe, shovel, spatula, crowbar, knife, scissors
+					}
+					filter_environment:
+					{
+						include: dirty, smelly, ugly, scary, noisy, reinforced, durable, sturdy
+					}
+				}
+				{
+					name: "Machine Pistol"
+					
+					type: undefined
+					flags: auto_generated
+					
+					requirements:
+					[
+						{
+							type: prefab
+							prefab: machine_pistol
+							amount: 1.000
+							group: 0
+							flags: prerequisite
+						}
+					]
+					
+					products:
+					[
+						{
+							type: resource
+							material: steel.rod
+							amount: 0.070
+							group: 0
+							flags: residue
+						}
+						{
+							type: resource
+							material: steel.frames
+							amount: 0.170
+							group: 0
+							flags: residue
+						}
+						{
+							type: resource
+							material: machine_parts
+							amount: 2.000
+							group: 0
+							flags: residue
+						}
+						{
+							type: resource
+							material: wood
+							amount: 0.050
+							group: 0
+							flags: residue
+						}
+						{
+							type: resource
+							material: scrap.mixed
+							amount: 5.500
+							group: 0
+							flags: residue
+						}
+					]
+					
+					filter_tools:
+					{
+						require: hammer
+						include: hammer, wrench, cleaver, bucket, axe, shovel, spatula, crowbar, knife, scissors
+					}
+					filter_environment:
+					{
+						include: dirty, smelly, ugly, scary, noisy, reinforced, durable, sturdy
+					}
+				}
+				{
+					name: "Pistol"
+					
+					type: undefined
+					flags: auto_generated
+					
+					requirements:
+					[
+						{
+							type: prefab
+							prefab: pistol
+							amount: 1.000
+							group: 0
+							flags: prerequisite
+						}
+					]
+					
+					products:
+					[
+						{
+							type: resource
+							material: steel.rod
+							amount: 0.060
+							group: 0
+							flags: residue
+						}
+						{
+							type: resource
+							material: steel.frames
+							amount: 0.0980
+							group: 0
+							flags: residue
+						}
+						{
+							type: resource
+							material: machine_parts
+							amount: 0.900
+							group: 0
+							flags: residue
+						}
+						{
+							type: resource
+							material: wood
+							amount: 0.0450
+							group: 0
+							flags: residue
+						}
+						{
+							type: resource
+							material: scrap.mixed
+							amount: 5.500
+							group: 0
+							flags: residue
+						}
+					]
+					
+					filter_tools:
+					{
+						require: hammer
+						include: hammer, wrench, cleaver, bucket, axe, shovel, spatula, crowbar, knife, scissors
+					}
+					filter_environment:
+					{
+						include: dirty, smelly, ugly, scary, noisy, reinforced, durable, sturdy
+					}
+				}
+				{
+					name: "Revolver"
+					
+					type: undefined
+					flags: auto_generated
+					
+					requirements:
+					[
+						{
+							type: prefab
+							prefab: revolver
+							amount: 1.000
+							group: 0
+							flags: prerequisite
+						}
+					]
+					
+					products:
+					[
+						{
+							type: resource
+							material: steel.rod
+							amount: 0.0850
+							group: 0
+							flags: residue
+						}
+						{
+							type: resource
+							material: steel.frames
+							amount: 0.170
+							group: 0
+							flags: residue
+						}
+						{
+							type: resource
+							material: machine_parts
+							amount: 0.600
+							group: 0
+							flags: residue
+						}
+						{
+							type: resource
+							material: wood
+							amount: 0.090
+							group: 0
+							flags: residue
+						}
+						{
+							type: resource
+							material: scrap.mixed
+							amount: 5.500
+							group: 0
+							flags: residue
+						}
+					]
+					
+					filter_tools:
+					{
+						require: hammer
+						include: hammer, wrench, cleaver, bucket, axe, shovel, spatula, crowbar, knife, scissors
+					}
+					filter_environment:
+					{
+						include: dirty, smelly, ugly, scary, noisy, reinforced, durable, sturdy
+					}
+				}
+				{
+					name: "Rifle"
+					
+					type: undefined
+					flags: auto_generated
+					
+					requirements:
+					[
+						{
+							type: prefab
+							prefab: rifle
+							amount: 1.000
+							group: 0
+							flags: prerequisite
+						}
+					]
+					
+					products:
+					[
+						{
+							type: resource
+							material: steel.plate
+							amount: 1.100
+							group: 0
+							flags: residue
+						}
+						{
+							type: resource
+							material: steel.frames
+							amount: 0.220
+							group: 0
+							flags: residue
+						}
+						{
+							type: resource
+							material: machine_parts
+							amount: 0.500
+							group: 0
+							flags: residue
+						}
+						{
+							type: resource
+							material: wood
+							amount: 0.160
+							group: 0
+							flags: residue
+						}
+						{
+							type: resource
+							material: scrap.mixed
+							amount: 5.500
+							group: 0
+							flags: residue
+						}
+					]
+					
+					filter_tools:
+					{
+						require: hammer
+						include: hammer, wrench, cleaver, bucket, axe, shovel, spatula, crowbar, knife, scissors
+					}
+					filter_environment:
+					{
+						include: dirty, smelly, ugly, scary, noisy, reinforced, durable, sturdy
+					}
+				}
+				{
+					name: "Scattergun"
+					
+					type: undefined
+					flags: auto_generated
+					
+					requirements:
+					[
+						{
+							type: prefab
+							prefab: scattergun
+							amount: 1.000
+							group: 0
+							flags: prerequisite
+						}
+					]
+					
+					products:
+					[
+						{
+							type: resource
+							material: steel.plate
+							amount: 0.700
+							group: 0
+							flags: residue
+						}
+						{
+							type: resource
+							material: steel.frames
+							amount: 0.350
+							group: 0
+							flags: residue
+						}
+						{
+							type: resource
+							material: machine_parts
+							amount: 0.325
+							group: 0
+							flags: residue
+						}
+						{
+							type: resource
+							material: wood
+							amount: 0.200
+							group: 0
+							flags: residue
+						}
+						{
+							type: resource
+							material: scrap.mixed
+							amount: 5.500
+							group: 0
+							flags: residue
+						}
+					]
+					
+					filter_tools:
+					{
+						require: hammer
+						include: hammer, wrench, cleaver, bucket, axe, shovel, spatula, crowbar, knife, scissors
+					}
+					filter_environment:
+					{
+						include: dirty, smelly, ugly, scary, noisy, reinforced, durable, sturdy
+					}
+				}
+				{
+					name: "Pump Shotgun"
+					
+					type: undefined
+					flags: auto_generated
+					
+					requirements:
+					[
+						{
+							type: prefab
+							prefab: pump_shotgun
+							amount: 1.000
+							group: 0
+							flags: prerequisite
+						}
+					]
+					
+					products:
+					[
+						{
+							type: resource
+							material: steel.plate
+							amount: 0.700
+							group: 0
+							flags: residue
+						}
+						{
+							type: resource
+							material: steel.frames
+							amount: 0.650
+							group: 0
+							flags: residue
+						}
+						{
+							type: resource
+							material: machine_parts
+							amount: 1.100
+							group: 0
+							flags: residue
+						}
+						{
+							type: resource
+							material: wood
+							amount: 0.145
+							group: 0
+							flags: residue
+						}
+						{
+							type: resource
+							material: scrap.mixed
+							amount: 5.500
+							group: 0
+							flags: residue
+						}
+					]
+					
+					filter_tools:
+					{
+						require: hammer
+						include: hammer, wrench, cleaver, bucket, axe, shovel, spatula, crowbar, knife, scissors
+					}
+					filter_environment:
+					{
+						include: dirty, smelly, ugly, scary, noisy, reinforced, durable, sturdy
+					}
+				}
+				{
+					name: "SMG"
+					
+					type: undefined
+					flags: auto_generated
+					
+					requirements:
+					[
+						{
+							type: prefab
+							prefab: smg
+							amount: 1.000
+							group: 0
+							flags: prerequisite
+						}
+					]
+					
+					products:
+					[
+						{
+							type: resource
+							material: steel.plate
+							amount: 0.320
+							group: 0
+							flags: residue
+						}
+						{
+							type: resource
+							material: steel.frames
+							amount: 0.270
+							group: 0
+							flags: residue
+						}
+						{
+							type: resource
+							material: machine_parts
+							amount: 2.100
+							group: 0
+							flags: residue
+						}
+						{
+							type: resource
+							material: wood
+							amount: 0.110
+							group: 0
+							flags: residue
+						}
+						{
+							type: resource
+							material: scrap.mixed
+							amount: 5.500
+							group: 0
+							flags: residue
+						}
+					]
+					
+					filter_tools:
+					{
+						require: hammer
+						include: hammer, wrench, cleaver, bucket, axe, shovel, spatula, crowbar, knife, scissors
+					}
+					filter_environment:
+					{
+						include: dirty, smelly, ugly, scary, noisy, reinforced, durable, sturdy
+					}
+				}
+{
+					name: "Machete"
+					
+					type: undefined
+					flags: auto_generated
+					
+					requirements:
+					[
+						{
+							type: prefab
+							prefab: Machete
+							amount: 1.000
+							group: 0
+							flags: prerequisite
+						}
+					]
+					
+					products:
+					[
+						{
+							type: resource
+							material: steel.ingot
+							amount: 0.280
+							group: 0
+							flags: residue
+						}
+						{
+							type: resource
+							material: wood
+							amount: 0.0600
+							group: 0
+							flags: residue
+						}
+						{
+							type: resource
+							material: wood.rod
+							amount: 0.100
+							group: 0
+							flags: residue
+						}
+						{
+							type: resource
+							material: glue
+							amount: 0.900
+							group: 0
+							flags: residue
+						}
+						{
+							type: resource
+							material: scrap.mixed
+							amount: 5.500
+							group: 0
+							flags: residue
+						}
+					]
+					
+					filter_tools:
+					{
+						require: hammer
+						include: hammer, wrench, cleaver, bucket, axe, shovel, spatula, crowbar, knife, scissors
+					}
+					filter_environment:
+					{
+						include: dirty, smelly, ugly, scary, noisy, reinforced, durable, sturdy
+					}
+				}
+{
+					name: "Knife"
+					
+					type: undefined
+					flags: auto_generated
+					
+					requirements:
+					[
+						{
+							type: prefab
+							prefab: knife
+							amount: 1.000
+							group: 0
+							flags: prerequisite
+						}
+					]
+					
+					products:
+					[
+						{
+							type: resource
+							material: steel.frames
+							amount: 0.1
+							group: 0
+							flags: residue
+						}
+						{
+							type: resource
+							material: wood
+							amount: 0.03
+							group: 0
+							flags: residue
+						}
+						{
+							type: resource
+							material: wood.rod
+							amount: 0.09
+							group: 0
+							flags: residue
+						}
+						{
+							type: resource
+							material: glue
+							amount: 0.500
+							group: 0
+							flags: residue
+						}
+						{
+							type: resource
+							material: scrap.mixed
+							amount: 5.500
+							group: 0
+							flags: residue
+						}
+					]
+					
+					filter_tools:
+					{
+						require: hammer
+						include: hammer, wrench, cleaver, bucket, axe, shovel, spatula, crowbar, knife, scissors
+					}
+					filter_environment:
+					{
+						include: dirty, smelly, ugly, scary, noisy, reinforced, durable, sturdy
+					}
+				}
+{
+					name: "Longsword"
+					
+					type: undefined
+					flags: auto_generated
+					
+					requirements:
+					[
+						{
+							type: prefab
+							prefab: Longsword
+							amount: 1.000
+							group: 0
+							flags: prerequisite
+						}
+					]
+					
+					products:
+					[
+						{
+							type: resource
+							material: steel.rod
+							amount: 0.9500
+							group: 0
+							flags: residue
+						}
+						{
+							type: resource
+							material: steel.frames
+							amount: 0.300
+							group: 0
+							flags: residue
+						}
+						{
+							type: resource
+							material: wood
+							amount: 0.0900
+							group: 0
+							flags: residue
+						}
+						{
+							type: resource
+							material: wood.rod
+							amount: 0.0900
+							group: 0
+							flags: residue
+						}
+						{
+							type: resource
+							material: glue
+							amount: 0.8
+							group: 0
+							flags: residue
+						}
+						{
+							type: resource
+							material: scrap.mixed
+							amount: 5.500
+							group: 0
+							flags: residue
+						}
+					]
+					
+					filter_tools:
+					{
+						require: hammer
+						include: hammer, wrench, cleaver, bucket, axe, shovel, spatula, crowbar, knife, scissors
+					}
+					filter_environment:
+					{
+						include: dirty, smelly, ugly, scary, noisy, reinforced, durable, sturdy
+					}
+				}
+			]
+		}
+	]
+	
+	requirements:
+	[
+						{
+							type: work
+							work: shattering
+							amount: 99.000
+							amount_min: 76.000
+							difficulty: 8
+							snapping: 5.000
+							falloff: 0.773
+							group: 0
+							flags: stepped, simultaneous, conditional
+						}
+						{
+							type: work
+							work: trashing.metal
+							amount: 38.000
+							amount_min: 63.000
+							difficulty: 4
+							snapping: 5.000
+							falloff: 0.915
+							group: 0
+							flags: stepped, simultaneous, conditional
+						}
+	]
+	
+	type: workshop
+	flags: dismantling
+	tags: manual, crafting, crude, simple, small, salvaging
+	hints: none
+	connotations: none
+	infrastructure: surface
+	infrastructure_exclude: none
+	
+	h_company: common.kobold
+	
+	icon:
+	{
+		texture: resource.scrap.arcane
+		size: [16, 16]
+		frame: [2, 0]
+	}
+	icon_offset: [-7.000, 0.000]
+	
+	icon_extra:
+	{
+		texture: ui_icons_widget
+		size: [16, 16]
+		frame: [10, 5]
+	}
+	icon_extra_offset: [-12.000, -12.000]
+	
+	icon_c:
+	{
+		texture: pistol
+		size: [14, 12]
+		frame: [1, 7]
+	}
+	icon_c_offset: [-2.000, -25.000]
+	
+	color_frame: "0xff19e2b1"
+	color_button: "0xff9dd80f"
+	rank: -131.000
+	
+	min: 1
+	max: 50
+	step: 1
+	
+	version: 1
+}
