@@ -1,7 +1,7 @@
-$name: "Pipe Rifle"
+$name: "Timbr Grindr"
 $desc:
 	'''
-	Scrap-made, flimsy and unreliable rifle that can use a wide variety of ammunition.	
+	An ancient tool of murderhobos and bandits alike, its secrets uncovered by only the most fanatical of Kobold scrapmasters.
 	'''
 $tags: []
 
@@ -36,22 +36,22 @@ gun:
 	sound_size: 3.000
 	sound_dist_multiplier: 2.500
 	
-	sound_shoot: slugthrower.shoot
+	sound_shoot: BanditRifleFire
 	sound_cycle: revolver_cycle
 	sound_reload: gun.shell.eject.00
 	
-	damage_multiplier: 1.700
-	velocity_multiplier: 320.000
+	damage_multiplier: 2.400
+	velocity_multiplier: 340.000
 	velocity_max: 520.000
 	jitter_multiplier: 0.290
 	recoil_multiplier: 1.850
 	muzzle_blast_mult: 1.100
-	reload_interval: 0.900
-	cycle_interval: 1.600
-	stability: 900.000
-	failure_rate: 0.200
+	reload_interval: 2.400
+	cycle_interval: 0.400
+	stability: 2600.000
+	failure_rate: 0.100
 	
-	ammo_filter: ammo_mg, ammo_hc, ammo_lc
+	ammo_filter: ammo_sg, granular
 	max_ammo: 5.000
 	
 	action: bolt
@@ -102,7 +102,7 @@ animated.renderer:
 {
 	sprite:
 	{
-		texture: "piperifle"
+		texture: "timbrgrindr"
 	}
 }
 
