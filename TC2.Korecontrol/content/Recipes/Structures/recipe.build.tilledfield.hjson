@@ -84,7 +84,7 @@
 		size: [2.000, 4.000]
 		offset: [0.400, -0.375]
 		
-		rect_foundation: [-1.550, 1.100, 2.350, 0.000]
+		rect_foundation: [-1.550, 0.000, 2.350, 1.100]
 		tileflags_foundation: solid
 		
 		rect_clearance: [-1.600, -1.700, 2.400, 0.000]
