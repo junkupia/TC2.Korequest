@@ -1,5 +1,5 @@
 ﻿{
-	$version: "0.1.75.0"
+	$version: "0.1.75.1"
 	name: "Crank gun"
 	tips: []
 	
@@ -237,7 +237,7 @@
 	
 	icon:
 	{
-		texture: lmg
+		texture: crankgun
 	}
 	
 	color_frame: "0xffaeb59a"
