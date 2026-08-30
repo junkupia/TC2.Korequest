@@ -44,7 +44,7 @@ animated.renderer:
 	sprite:
 	{
 		texture: crate.metal.padded.00
-		mask: crate.metal.00.mask
+		mask: 
 	}
 	z: -70.200
 }
