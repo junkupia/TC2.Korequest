@@ -120,47 +120,5 @@
 		}
 	]
 	
-	sounds_random:
-	[
-		{
-			time_minmax: [3.000, 5.000]
-			volume_minmax: [0.050, 0.100]
-			pitch_minmax: [0.600, 0.800]
-			
-			sounds:
-			[
-				explosion.shrapnel.01
-			]
-		}
-		{
-			time_minmax: [3.000, 5.000]
-			volume_minmax: [0.050, 0.100]
-			pitch_minmax: [0.600, 0.800]
-			
-			sounds:
-			[
-				explosion.03
-			]
-		}
-		{
-			time_minmax: [3.000, 5.000]
-			volume_minmax: [0.050, 0.100]
-			pitch_minmax: [0.600, 0.800]
-			
-			sounds:
-			[
-				flesh_gib_00
-			]
-		}
-		{
-			time_minmax: [3.000, 5.000]
-			volume_minmax: [0.050, 0.100]
-			pitch_minmax: [0.600, 0.800]
-			
-			sounds:
-			[
-				chaingun.shoot
-			]
-		}
-	]
+	sounds_random: []
 }
