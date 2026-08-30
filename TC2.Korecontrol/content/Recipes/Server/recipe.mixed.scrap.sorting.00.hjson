@@ -1,5 +1,5 @@
 ﻿{
-	$version: "0.1.74.0"
+	$version: "0.1.75.1"
 	name: "Mixed scrap sorting"
 	
 	related_materials:
@@ -700,7 +700,7 @@
 	frame_size: [64.000, 16.000]
 	
 	min: 1
-	max: 50
+	max: 200
 	step: 1
 	
 	version: 0

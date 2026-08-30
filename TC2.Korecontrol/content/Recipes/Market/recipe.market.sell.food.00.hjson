@@ -9,6 +9,10 @@
 		chow: ingredient
 		mayo: ingredient
 		eggs: ingredient
+		onion.juice: ingredient
+		mushroom.juice: ingredient
+		sauce: ingredient
+		vinegar: ingredient
 	}
 	
 	stages:
@@ -55,7 +59,7 @@
 						{
 							type: resource
 							material: money
-							amount: 9.500
+							amount: 8.000
 							group: 0
 							flags: primary
 						}
@@ -147,6 +151,170 @@
 					advance_delay: 0.000
 					complete_delay: 0.000
 				}
+				{
+					name: "Mushroom juice"
+					desc: "Boil some shroom, get some slime, sell to get money its simple realy."
+					
+					type: undefined
+					flags: none
+					
+					requirements:
+					[
+						{
+							type: resource
+							material: mushroom.juice
+							amount: 1.000
+							group: 0
+							flags: prerequisite
+						}
+						{
+							type: work
+							work: trading
+							amount: 60.000
+							difficulty: 8
+							group: 0
+							flags: no_scaling, conditional
+						}
+					]
+					
+					products:
+					[
+						{
+							type: resource
+							material: money
+							amount: 6.000
+							group: 0
+							flags: primary
+						}
+					]
+					
+					start_delay: 0.000
+					advance_delay: 0.000
+					complete_delay: 0.000
+				}
+				{
+					name: "Vinegar"
+					desc: "Selling this makes you want to go for some fish and chips right about now."
+					
+					type: undefined
+					flags: none
+					
+					requirements:
+					[
+						{
+							type: resource
+							material: vinegar
+							amount: 1.000
+							group: 0
+							flags: prerequisite
+						}
+						{
+							type: work
+							work: trading
+							amount: 70.000
+							difficulty: 8
+							group: 0
+							flags: no_scaling, conditional
+						}
+					]
+					
+					products:
+					[
+						{
+							type: resource
+							material: money
+							amount: 3.000
+							group: 0
+							flags: primary
+						}
+					]
+					
+					start_delay: 0.000
+					advance_delay: 0.000
+					complete_delay: 0.000
+				}
+				{
+					name: "Brown sauce"
+					desc: "Universal sauce for universal coins,"
+					
+					type: undefined
+					flags: none
+					
+					requirements:
+					[
+						{
+							type: resource
+							material: sauce
+							amount: 1.000
+							group: 0
+							flags: prerequisite
+						}
+						{
+							type: work
+							work: trading
+							amount: 90.000
+							difficulty: 8
+							group: 0
+							flags: no_scaling, conditional
+						}
+					]
+					
+					products:
+					[
+						{
+							type: resource
+							material: money
+							amount: 5.500
+							group: 0
+							flags: primary
+						}
+					]
+					
+					start_delay: 0.000
+					advance_delay: 0.000
+					complete_delay: 0.000
+				}
+				{
+					name: "Onion juice"
+					desc: "The juice that makes you cry when you get the  money its worth."
+					
+					type: undefined
+					flags: none
+					
+					requirements:
+					[
+						{
+							type: resource
+							material: onion.juice
+							amount: 1.000
+							group: 0
+							flags: prerequisite
+						}
+						{
+							type: work
+							work: trading
+							amount: 50.000
+							difficulty: 8
+							group: 0
+							flags: no_scaling, conditional
+						}
+					]
+					
+					products:
+					[
+						{
+							type: resource
+							material: money
+							amount: 9.800
+							group: 0
+							flags: primary
+						}
+					]
+					
+					start_delay: 0.000
+					advance_delay: 0.000
+					complete_delay: 0.000
+				}
 			]
 		}
 	]
@@ -159,15 +327,19 @@
 	infrastructure: table, chair, surface
 	infrastructure_exclude: none
 	
+	icon:
+	{
+		size: [16, 16]
+	}
 	icon_offset: [0.000, -7.000]
 	
 	icon_extra:
 	{
-		texture: ui_icon_coin2
+		texture: ui_icons_crafting.mini
 		size: [16, 16]
-		frame: [2, 0]
+		frame: [5, 0]
 	}
-	icon_extra_offset: [2.000, -2.000]
+	icon_extra_offset: [0.000, -1.000]
 	
 	icon_c:
 	{

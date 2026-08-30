@@ -31,10 +31,10 @@ body:
 		
 		points:
 		[
-			[-1.750, -0.250]
-			[1.750, -1.125]
-			[2.375, 2.500]
-			[-2.250, 2.625]
+			[-2.25, -1.750]
+			[2.25, -1.750]
+			[2.250, 2.500]
+			[-2.250, 2.500]
 		]
 	}
 }
@@ -88,7 +88,7 @@ shop:
 
 workshop:
 {
-	orders_capacity: 1
+	orders_capacity: 5
 	
 	tools: none
 	infrastructure: none
@@ -109,6 +109,23 @@ workshop:
 		}
 		offset: [-0.625, 0.875]
 	}
+}
+
+personnel:
+{
+	characters_capacity: 1
+	assign_radius: 50.000
+	slots:
+	[
+		{
+			role: clerk
+			flags: can_craft, can_manage, can_use_inventory
+			tags: management, civil, industrial, logistics, production, manual_labor, paperwork, sedentary, technical, maintenance, operation
+			color: "0xffff8333"
+			multiplier: 1.000
+		}
+
+	]
 }
 
 nameable:

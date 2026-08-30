@@ -1,5 +1,5 @@
 ﻿{
-	$version: "0.1.75.0"
+	$version: "0.1.75.1"
 	name: "Plantstuff sorting"
 	tips: []
 	
@@ -39,7 +39,7 @@
 						{
 							type: resource
 							material: plants
-							amount: 54.34782
+							amount: 108.6956
 							snapping: 0.500
 							falloff: 0.970
 							group: 0
@@ -96,8 +96,8 @@
 						{
 							type: resource
 							material: onion.juice
-							amount: 0.920909
-							amount_extra: 0.767425
+							amount: 0.482605
+							amount_extra: 0.402171
 							group: 0
 							flags: byproduct
 						}
@@ -158,7 +158,7 @@
 						{
 							type: resource
 							material: plants
-							amount: 54.34782
+							amount: 271.7391
 							snapping: 0.500
 							falloff: 0.970
 							group: 0
