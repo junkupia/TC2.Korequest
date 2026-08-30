@@ -102,23 +102,3 @@ shipment:
 	layout: square
 	color: "0xfff0c63e"
 }
-
-personnel:
-{
-	flags: none
-	assign_radius: 20.000
-	slots:
-	[
-		{
-			role: alchemist
-			tags: management, research, civil, industrial, production, dangerous, sedentary, technical, maintenance, operation
-			color: "0xff80dc7e"
-			multiplier: 2.000
-		}
-		null
-		null
-		null
-		null
-	]
-	characters_capacity: 1
-}

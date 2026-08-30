@@ -146,8 +146,8 @@ personnel:
 	slots:
 	[
 		{
-			role: caretaker
-			tags: management, production, manual_labor, operation
+			role: farmer
+			tags: civil, production, manual_labor, maintenance, operation
 			color: "0xffe3cb93"
 			multiplier: 2.000
 		}
