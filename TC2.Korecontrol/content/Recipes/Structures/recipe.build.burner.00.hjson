@@ -1,5 +1,5 @@
 ﻿{
-	$version: "0.1.72.1"
+	$version: "0.1.75.1"
 	name: "Burner"
 	tips: []
 	
@@ -68,7 +68,7 @@
 		flags: allow_mirror_x, require_terrain, terrain_is_support, no_solid_support
 		
 		size: [2.250, 3.000]
-		offset: [0.000, -1.250]
+		offset: [0.000, -2.000]
 		
 		rect_foundation: [-1.125, 0.000, 1.125, 0.500]
 		tileflags_foundation: solid
