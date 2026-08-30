@@ -340,7 +340,7 @@
 		texture: yeoldemarket
 		size: [50, 64]
 	}
-	icon_offset: [0.000, -6.000]
+	icon_offset: [0.000, -2.000]
 	
 	color_frame: "0xffc54e5e"
 	color_button: "0xff9dd80f"
@@ -357,12 +357,12 @@
 		flags: allow_mirror_x, require_claimed, require_terrain, terrain_is_support
 		
 		size: [7.000, 10.125]
-		offset: [0.000, -2.275]
+		offset: [0.000, -4.025]
 		
-		rect_foundation: [-3.500, 1.400, 3.500, 2.400]
+		rect_foundation: [-3.500, 0.000, 3.500, 1.000]
 		tileflags_foundation: solid
 		
-		rect_clearance: [-3.225, -6.300, 3.225001, 1.400]
+		rect_clearance: [-3.225, 0.000, 3.225001, -8.100]
 		tileflags_clearance: solid
 		
 		cooldown: 1.000
